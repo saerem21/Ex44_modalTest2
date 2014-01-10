@@ -10,7 +10,7 @@
 #import "ModalViewController.h"
 
 @interface ViewController ()<UITextFieldDelegate>
-@property (weak, nonatomic) IBOutlet UITextField *mainInput;
+
 
 @end
 
@@ -47,7 +47,7 @@
 -(IBAction)showModal2:(id)sender{
     UIStoryboard *storyboard = self.storyboard;
     ModalViewController *modalVC = [storyboard instantiateViewControllerWithIdentifier:@"modalVC"];
-    modalVC.msg = self.mainInput;
+    modalVC.msg = self.mainInput.text;
     
     [self presentViewController:modalVC animated:YES completion:nil];
 }
