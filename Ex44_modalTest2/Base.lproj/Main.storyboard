@@ -79,7 +79,8 @@
                                 <rect key="frame" x="0.0" y="30" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Item" id="zEL-IA-ccp">
+                                    <barButtonItem width="253" style="plain" systemItem="fixedSpace" id="IMU-OV-pop"/>
+                                    <barButtonItem title="close" id="zEL-IA-ccp">
                                         <connections>
                                             <action selector="colseModalVC:" destination="Qo0-bQ-QPv" id="KVY-n2-vHl"/>
                                         </connections>
