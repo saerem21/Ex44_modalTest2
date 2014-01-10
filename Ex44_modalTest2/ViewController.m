@@ -7,17 +7,49 @@
 //
 
 #import "ViewController.h"
+#import "ModalViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *mainInput;
 
 @end
 
 @implementation ViewController
 
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [textField resignFirstResponder];
+    return YES;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	    // Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [self.mainInput resignFirstResponder];
+    [super viewDidAppear:animated];
+
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([@"ModalSegue" isEqualToString:segue.identifier]){
+        ModalViewController *modalIVC = segue.destinationViewController;
+        modalIVC.msg = self.mainInput.text;
+    }
+}
+
+-(IBAction)showModal1:(id)sender{
+    [self performSegueWithIdentifier:@"ModalSegue" sender:self];
+}
+
+-(IBAction)showModal2:(id)sender{
+    UIStoryboard *storyboard = self.storyboard;
+    ModalViewController *modalVC = [storyboard instantiateViewControllerWithIdentifier:@"modalVC"];
+    modalVC.msg = self.mainInput;
+    
+    [self presentViewController:modalVC animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

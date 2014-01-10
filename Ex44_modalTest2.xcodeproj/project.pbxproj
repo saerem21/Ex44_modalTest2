@@ -21,6 +21,7 @@
 		00BE67FC187FBF7D001537B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BE67DE187FBF7C001537B8 /* UIKit.framework */; };
 		00BE6804187FBF7D001537B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00BE6802187FBF7D001537B8 /* InfoPlist.strings */; };
 		00BE6806187FBF7D001537B8 /* Ex44_modalTest2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BE6805187FBF7D001537B8 /* Ex44_modalTest2Tests.m */; };
+		00BE6811187FC01B001537B8 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BE6810187FC01B001537B8 /* ModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		00BE6801187FBF7D001537B8 /* Ex44_modalTest2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ex44_modalTest2Tests-Info.plist"; sourceTree = "<group>"; };
 		00BE6803187FBF7D001537B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		00BE6805187FBF7D001537B8 /* Ex44_modalTest2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ex44_modalTest2Tests.m; sourceTree = "<group>"; };
+		00BE680F187FC01B001537B8 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		00BE6810187FC01B001537B8 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				00BE67F0187FBF7C001537B8 /* ViewController.m */,
 				00BE67F2187FBF7C001537B8 /* Images.xcassets */,
 				00BE67E1187FBF7C001537B8 /* Supporting Files */,
+				00BE680F187FC01B001537B8 /* ModalViewController.h */,
+				00BE6810187FC01B001537B8 /* ModalViewController.m */,
 			);
 			path = Ex44_modalTest2;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00BE6811187FC01B001537B8 /* ModalViewController.m in Sources */,
 				00BE67F1187FBF7C001537B8 /* ViewController.m in Sources */,
 				00BE67EB187FBF7C001537B8 /* AppDelegate.m in Sources */,
 				00BE67E7187FBF7C001537B8 /* main.m in Sources */,
